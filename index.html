@@ -5,41 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Esperimenti</title>
+    <title>Il mio biglietto</title>
 </head>
 
 <body>
     <div class="container">
         <div class="row p-5">
-            <div id="home" class="col bg-white p-4 m-4">
-                <h1 class="text-uppercase">Italo Treno</h1>
-                <input class="myName" type="text" placeholder="Il tuo nome" >
-                <input class="age" type="number" placeholder="La tuà età" >
-                <input class="km" type="text" placeholder="Inserisci i km">
-                <button class="calcTicket">Calcola</button>
-                <button class="resetTicket">Reset</button>
-            </div>
-           
-            <div id="ticket" class="col bg-white p-4 m-4 text-center d-flex flex-column align-items-center d-none">
-                <h1 class="text-uppercase">Il tuo biglietto</h1>
-                <div class="my-container">
-                    <div class="my-card">
-                      <img src="./img/image-qr-code.png" alt="">
-                      <h3 class="text-center">Il tuo biglietto</h3>
-                      <p id="passenger" class="fw-bold text-center">Nome</p>
-                      <p id="kilometers" class="fw-bold text-center">Lunghezza tratta</p>
-                      <p id="yourPrice" class="fw-bold text-center">Totale Biglietto</p>
-                    </div>
-                    <button class="resetTicket">Reset</button>
+            <div id="home" class="col rounded-5 bg-white p-4 m-4 text-center bordr">
+                <h1 class="text-uppercase p-2">Prenota un biglietto</h1>
+                <div>
+                    <input class="myName" type="text" placeholder="Il tuo nome">
+                    <input class="age" type="number" placeholder="La tuà età">
+                    <input class="km" type="text" placeholder="Inserisci i km">
                 </div>
-                
+                <div class="py-3">
+                    <button class="calcTicket btn btn-primary">Calcola</button>
+                    <button class="resetTicket btn btn-secondary">Reset</button>
+                </div>
             </div>
-        
-    </div>    
-    <script type="text/javascript" src="./js/script.js"></script>
+
+            <div id="ticket" class=" bg-white rounded-5 p-4 m-4 text-center d-flex flex-column align-items-center d-none">
+                <div class="my-card w-50 rounded-5 p-4">
+                    <h1 class="text-uppercase">Il tuo biglietto</h1>
+                    <img src="./img/image-qr-code.png" alt="">
+                    <h3 class="text-center">Il tuo biglietto</h3>
+                    <p id="passenger" class="fw-bold text-center">Nome</p>
+                    <p id="kilometers" class="fw-bold text-center">Lunghezza tratta</p>
+                    <p id="yourPrice" class="fw-bold text-center">Totale Biglietto</p>
+                </div>
+                <button class="resetTicket">Reset</button>
+
+
+            </div>
+
+        </div>
+        <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
-</html> 
+</html>

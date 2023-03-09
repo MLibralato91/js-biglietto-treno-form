@@ -13,9 +13,12 @@ body{
     background-size: cover;
 }
 .container{
-    background-color: var(--bg-card);
+    background-color:#1b497e6c
 
     
+}
+.my-card{
+    background-color: #ddf5fd;
 }
 .my-container{
     width: 50%;
