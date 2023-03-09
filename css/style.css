@@ -8,19 +8,26 @@
 }
 
 body{
-    background-color: var(--bg-card);
+    background-image: url(/img/roma-termini-station-night-rome-italy-july-view-around-romeã€€-123552125.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container{
     background-color: var(--bg-card);
+
+    
 }
 .my-container{
     width: 50%;
-    background-color: var(--color-card);
+    background-color: rgb(227, 234, 241);
     border-radius: 20px;
     margin-top: 100px;
     box-shadow: 30px 30px 30px var(--p-card);
+    
 }
-
+.row{
+    
+}
 
 .my-card img{
     width: 60%;
@@ -30,7 +37,7 @@ body{
 
 p{
   
-    color: var(--p-card);
+    color: black;
 
-    padding: 20px 0;
+     ;
 }

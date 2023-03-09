@@ -14,24 +14,28 @@
 <body>
     <div class="container">
         <div class="row p-5">
-            <div class="col bg-white p-3">
+            <div id="home" class="col bg-white p-4 m-4">
                 <h1 class="text-uppercase">Italo Treno</h1>
+                <input class="myName" type="text" placeholder="Il tuo nome" >
                 <input class="age" type="number" placeholder="La tuà età" >
                 <input class="km" type="text" placeholder="Inserisci i km">
                 <button class="calcTicket">Calcola</button>
                 <button class="resetTicket">Reset</button>
             </div>
            
-            <div id="ticket" class="col bg-white p-3 text-center d-flex flex-column align-items-center d-none">
+            <div id="ticket" class="col bg-white p-4 m-4 text-center d-flex flex-column align-items-center d-none">
                 <h1 class="text-uppercase">Il tuo biglietto</h1>
                 <div class="my-container">
                     <div class="my-card">
                       <img src="./img/image-qr-code.png" alt="">
                       <h3 class="text-center">Il tuo biglietto</h3>
-                      <p class="text-center">Scan the QR code to visit Fronted Mentor and take your coding skills to the next level</p>
+                      <p id="passenger" class="fw-bold text-center">Nome</p>
+                      <p id="kilometers" class="fw-bold text-center">Lunghezza tratta</p>
+                      <p id="yourPrice" class="fw-bold text-center">Totale Biglietto</p>
                     </div>
+                    <button class="resetTicket">Reset</button>
                 </div>
-              
+                
             </div>
         
     </div>    
