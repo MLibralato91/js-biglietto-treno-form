@@ -33,7 +33,7 @@ const juniorPrice = 0.20;
 const seniorPrice = 0.40;
 let totalPrice;
 
-
+const ticket = document.querySelector('ticket');
 
 document.querySelector("button.calcTicket").addEventListener("click", myFunctionCalc );
 
@@ -49,6 +49,8 @@ function myFunctionCalc(){
     else
         totalPrice = myKm.value * myPrice;
     console.log(totalPrice);
+
+    ticket.classList.remove('d-none');
 }
 
 
