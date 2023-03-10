@@ -64,7 +64,7 @@ function myFunctionCalc(){
 
 
 document.querySelector("button.resetTicket").addEventListener("click", myFunctionReset );
-document.querySelector("#ticket.button.resetTicket").addEventListener("click", myFunctionReset );
+
 function myFunctionReset(){
     myKm.value = '';
     myAge.value= '';
@@ -72,3 +72,4 @@ function myFunctionReset(){
     ticket.classList.add('d-none');
     home.classList.remove('d-none');
 }
+document.querySelector("#ticket button.resetTicket").addEventListener("click", myFunctionReset );
